@@ -34,7 +34,7 @@ struct renderpage_s
 	pdf_page *page;
 };
 
-JNI_OnLoad(JavaVM *jvm, void *reserved)
+jint JNI_OnLoad(JavaVM *jvm, void *reserved)
 {
 	DEBUG("initializing PdfRender JNI library based on MuPDF");
 
