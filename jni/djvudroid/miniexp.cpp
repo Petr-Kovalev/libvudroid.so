@@ -35,6 +35,11 @@
 
 #include "miniexp.h"
 
+#ifndef MINIEXP_HAVE_SIZED_DELETE
+void operator delete(void* p, size_t) noexcept { ::operator delete(p); }
+void operator delete[](void* p, size_t) noexcept { ::operator delete[](p); }
+#endif
+
 #ifdef HAVE_NAMESPACES
 # define BEGIN_ANONYMOUS_NAMESPACE namespace {
 # define END_ANONYMOUS_NAMESPACE }
