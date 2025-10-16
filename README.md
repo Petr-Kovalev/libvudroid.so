@@ -14,7 +14,7 @@ This fork focuses solely on the JNI components required to build `libvudroid.so`
 
 - **Source Code**: The `jni` folder containing the necessary C/C++ sources for building `libvudroid.so`.
 - **Pre-compiled Binaries**: Ready-to-use `.so` files in the `libs` folder, compiled for supported CPU architectures (arm64-v8a, x86_64, armeabi-v7a, x86).
-- **Build Compatibility**: Compiled using Android NDK version 28.2.13676358.
+- **Build Compatibility**: Compiled using Android NDK version 29.0.14206865.
 
 ## Build Instructions
 
@@ -25,7 +25,7 @@ To build `libvudroid.so` from source:
 3. Run the following command (adjust the NDK path as needed):
 
    ```
-   /Users/{username}/Library/Android/sdk/ndk/28.2.13676358/ndk-build --directory=jni
+   /Users/$(whoami)/Library/Android/sdk/ndk/29.0.14206865/ndk-build --directory=jni
    ```
 
 4. The resulting binaries will be generated in the `libs` folder, organized by CPU architecture.
